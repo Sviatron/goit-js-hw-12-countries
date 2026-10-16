@@ -2,23 +2,28 @@
   "name": "goit-js-hw-12-countries",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "homepage": "https://sviatron.github.io/goit-js-hw-12-countries",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --dist-dir build",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sviatron/goit-js-hw-12-countries.git"
+    "url": "git+https://github.com/sviatron/goit-js-hw-12-countries.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/Sviatron/goit-js-hw-12-countries/issues"
+    "url": "https://github.com/sviatron/goit-js-hw-12-countries/issues"
   },
-  "homepage": "https://github.com/Sviatron/goit-js-hw-12-countries#readme",
   "dependencies": {
+    "parcel": "^2.16.4",
     "pnotify": "^5.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
